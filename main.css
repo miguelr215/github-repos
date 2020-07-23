@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Red Rose', cursive, sans-serif;
+    font-weight: 300;
+}
+
+.hidden {
+    display: none;
 }
 
 h1,
@@ -14,10 +19,20 @@ form {
 
 h1 {
     margin: 10px;
+    font-weight: 400;
+}
+
+h3 {
+    display: inline-block;
 }
 
 form {
     font-size: 18px;
+}
+
+form input[type=text] {
+    font-size: 18px;
+    padding: 5px;
 }
 
 #searchBtn {
@@ -29,3 +44,41 @@ form {
     border-radius: 10px;
 }
 
+.resultContainer {
+    padding: 10px;
+}
+
+.resultHeader {
+    margin: 10px;
+    font-weight: 400;
+}
+
+.resultBox {
+    width: 500px;
+    margin: 10px auto;
+}
+
+.resultBox ul {
+    list-style: none;
+}
+
+.resultBox li,
+.resultBox a {
+    text-decoration: none;
+}
+
+.resultBox li {
+    margin-bottom: 7px;
+}
+
+ion-icon {
+    display: inline-block;
+    font-size: 150%;
+    margin-right: 10px;
+}
+
+@media all and (min-width: 600px){
+    .resultBox {
+        width: 900px;
+    }
+}

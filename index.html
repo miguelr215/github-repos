@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>GitHub Repo Search</h1>
+    <div class="container">
+        <h1>GitHub Repo Search</h1>
 
-    <form>
-        <label for="targetUser">Enter user: </label>
-        <input type="text" name="targetUser" id="targetUser">
-        <input type="submit" value="Search" id="searchBtn">
-    </form>
+        <form>
+            <label for="targetUser">Enter user: </label>
+            <input type="text" name="targetUser" id="targetUser">
+            <input type="submit" value="Search" id="searchBtn">
+        </form>
 
-    <div class="resultHeader hidden"></div>
-    <div class="resultBox hidden"></div>
+        <div class="resultContainer">
+            <p class="errorMsg" id="js-error-msg"></p>
+            <div class="resultHeader hidden"></div>
+            <div class="resultBox hidden">
+                <ul class="resultsList">
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
